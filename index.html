@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="handleForm(event)">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name">
+        <label for="age">Age</label>
+        <input onkeyup="validateInput('age')" type="number" name="age" id="age">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email">
+        <label for="phone">Phone Number</label>
+        <input onkeyup="validateInput('phone')" type="number" name="phone" id="phone">
+        <label for="gender">Gender</label>
+        <div class="gender-container">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="male">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="female">
+        </div>
+        <p class="error"></p>
+        <button id="btn" type="submit">Submit</button>
+    </form>
+
+    <script src="script1.js"></script>
+</body>
+</html>
